@@ -1,0 +1,16 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin ze {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin  gochi {
+    font-family: 'Gochi Hand', cursive;
+}

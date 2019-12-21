@@ -1,0 +1,845 @@
+@import "variable";
+@import "mixin";
+
+html{
+    box-sizing: content-box;
+    font-size: 16px;
+    @include ubuntu;
+
+    
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    @include ze;
+}
+
+
+
+header{
+    
+        background-image: url(/dist/img/filet-separation.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 30px;
+    
+    .container{
+         width: 80%;
+         margin: auto;
+         .head1{
+             @include flex;
+             justify-content: space-around;
+             align-items: center;
+             margin-top: 20px;
+            .reseaux{
+                @include flex;
+            }
+            div{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: #1877f2;
+                        
+                    }
+                }
+                i{
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    padding: 5px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 1.2rem;
+                    margin-right: 5px;
+                    &:hover{
+                        border: 2px solid #1877f2;
+                        transform: rotate(360deg);
+                        transition: transform 0.6s ease-in-out;
+                    }
+            
+                }
+                
+
+            }
+            .connexion{
+                a{
+                    background-image: url(/dist/img/bg-espace.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 15px 21px 20px;
+                    position: relative;
+                    color: white;
+                    text-shadow: 0 0 4px #df5917;
+                    font-weight: 600;
+                    &:before{
+                        content: url(/dist/img/oika-finger.png);
+                        position: absolute;
+                        top: 17px;
+                        left: -30px;
+                        transition: all .3s ease-in-out;
+                        
+                    }
+                    &:hover{
+                        color: white;
+                        text-shadow: 0 0 4px #df5917;
+                        &:before{
+
+                            left: -20px;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .head2{
+            
+            ul{
+                list-style: none;
+                @include flex;
+                font-size: .8rem;
+                margin-top: 30px;
+                margin-bottom: 0;
+                justify-content: space-around;
+                padding: 0 70px;
+                li{
+                    border-right: 1px solid gray;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    &:nth-of-type(7){
+                        border-right: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+main{
+    #home{
+        background-image: url(/dist/img/TEA_9666.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 600px;
+        text-align: center;
+        padding-top: 50px;
+        h1{
+            @include ze;
+            @include gochi;
+            color: white;
+            font-size: 2.4rem;
+            width: 475px;
+            margin: auto;
+        }
+        .base_line{
+            width: 325px;
+            margin: auto;
+        }
+    }
+    #devenir{
+        background-color: #e96350;
+        height: 550px;
+        .container{
+            @include flex;
+            width: 80%;
+            margin: 0 auto;
+            .image{
+                width: 45%;
+                background-image: url(/dist/img/fille-poussin.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom center;
+                height: 550px;
+            }
+            .text{
+                width: 55%;
+                padding-left: 20px;
+                h2{
+                    color: white;
+                    @include gochi;
+                    font-size: 2.4rem;
+                    margin-top: 60px;
+
+                }
+                h3{
+                    color: white;
+                    font-size: 1.5rem;
+                }
+                p{
+                    line-height: 25px;
+                }
+                p:nth-of-type(3){
+                    margin-bottom: 50px;
+                }
+                a{
+                    @include gochi;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 25px;
+                    margin-top: 120px;
+                    color: white;
+                    background-image: url(/dist/img/trace.svg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: 0 32%;
+                    padding: 10px 50px;
+                    width: 200px;
+                    height: 50px;
+                    &:hover{
+                        background-position: 0 68%;
+                    }
+                    
+                }
+                
+            }
+        }
+        
+
+    }
+
+    #accueillir{
+        background-color: #00aac5;
+        height: 400px;
+
+        .container{
+            width: 80%;
+            margin: auto;
+            @include flex;
+            .text{
+                width: 50%;
+                h2{
+                    @include ze;
+                    margin-top: 40px;
+                    @include gochi;
+                    color: white;
+                    font-size: 2.4rem;
+                    
+                }
+                h3{
+                    color: white;
+                    font-size: 1.5rem;
+                    width: 96%;
+                }
+                p{
+                    line-height: 25px;
+                    width: 90%;
+                    margin-bottom: 30px;
+                }
+                a{
+                    @include gochi;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 25px;
+                    color: black;
+                    background-image: url(/dist/img/trace.svg);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: 0 0;
+                    padding: 15px 50px;
+                    width: 200px;
+                    height: 50px;
+                    &:hover{
+                        background-position: 0 66%;
+                    }
+                }
+            }
+            .image{
+                width: 50%;
+                height: 400px;
+                background-image: url(/dist/img/mec-oies.png);
+                background-size: 65%;
+                background-repeat: no-repeat;
+                background-position:  bottom ;
+
+            }
+        }
+    }
+    #inscrire{
+        text-align: center;
+        background-color: #fdcc48;
+        padding-top: 50px;
+        height: 400px;
+        position: relative;
+        h2{
+            @include gochi;
+            @include ze;
+            font-size: 2.5rem;
+            
+        }
+        .baseline{
+            background-image: url(/dist/img/baseline.svg);
+            background-repeat: no-repeat;
+            width: 260px;
+            height: 50px;
+            margin: auto;
+        }
+        div{
+            width: 300px;
+            margin: auto;
+            @include flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                font-size: 1.2rem;
+                margin-right: 20px;
+            
+            }
+        }
+        .fond{
+            position: absolute;
+            top: 235px;
+            left: 480px;
+            background-image: url(/dist/img/fond-promo-bleu.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+            height: 150px;
+            width: 450px;
+            padding: 20px 0;
+            margin: auto;
+            p{
+                color: white;
+                font-weight: 600;
+                font-size: 2rem;
+                @include ze;
+                margin: 20px 0 5px 0;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                @include gochi;
+                font-size: 25px;
+                background-image: url(/dist/img/trace.svg);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                padding: 10px 50px;
+                width: 220px;
+                height: 50px;
+                display: inline-block;
+                line-height: 45px;
+                &:hover{
+                    color: #00aac5
+                }
+                
+            }
+        }
+    }
+    #onJoue{
+        height: 700px;
+        @include flex;
+        .image{
+            width: 50%;
+            background-image: url(/dist/img/fond-Gold-up-e1570008201547.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: right;
+            padding-right: 30px;
+            width: 50%;
+            position: relative;
+            img{
+                vertical-align: middle;
+                position: absolute;
+                top: 120px;
+                left: 220px;
+                
+            }
+
+        }
+        .text{
+            width: 50%;
+            padding-left: 30px;
+            
+            h2{
+                @include gochi;
+                @include ze;
+                margin-top: 70px;
+                font-size: 2.5rem;
+
+            }
+            .baseline{
+                background-image: url(/dist/img/baseline-jaune.svg);
+                background-repeat: no-repeat;
+                height: 50px;
+                width: 250px;
+            }
+            div{
+                @include flex;
+                align-items: center;
+                h3{
+
+                    @include ze;
+                    color: #e95c48;
+                    font-size: 1.75rem;
+                    font-weight: bold;
+                    margin-right: 10px;
+                }
+                p{
+                    margin-top: 25px;
+                }
+            }
+            p{
+                width: 400px;
+                font-size: 1.1rem;
+                line-height: 25px;
+            }
+            ul{
+                @include flex;
+                @include ze;
+                @include gochi;
+                list-style: none;
+                margin-bottom: 40px;
+                
+                li{
+                    border: 2px solid  #e95c48;
+                    color: #e95c48;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    font-size: .6rem;
+                    width: 38px;
+                    height: 38px;
+                    p{
+                        margin-left: 3px;
+                        font-size: .6rem;
+                        line-height: 10px;
+                        span{
+                            font-size: 1.3rem;
+                        }
+                    }
+                    
+                    &:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6) {
+                        border: none;
+                    }
+
+                    
+                    
+                }
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                background-image: url(/dist/img/trace.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: 0 94%;
+                padding: 8px 50px;
+                margin-left: -15px;
+                @include gochi;
+                font-size: 1.2rem;
+                &:hover{
+                    background-position: 0 34%;
+                }
+                
+
+            }
+        }
+
+
+    }
+
+    #quoi{
+        background-color: #0eb8e9;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        .container{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            h2{
+                @include gochi;
+                @include ze;
+                font-size: 2.5rem;
+                color: white;
+                
+            }
+            .baseline{
+                background-image: url(/dist/img/baseline-jaune.svg);
+                background-repeat: no-repeat;
+                width: 290px;
+                height: 50px;
+                margin: auto;
+            }
+            .icone{
+                @include flex;
+                justify-content: space-around;
+                div{
+                    img{
+                        height: 200px;
+                    }
+
+                    h4{
+                        @include gochi;
+                        color: white;
+                        font-size: 1.8rem;
+                        align-self: flex-end;
+                        margin-top: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #actu{
+        background-image: url(/dist/img/dot-line.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+        padding-bottom: 50px;
+        .container{
+            width: 80%;
+            margin: auto;
+            .titre{
+                @include flex;
+                align-items: center;
+                justify-content: center;
+                @include gochi;
+                font-size: 1.8rem;
+                padding-top: 40px;
+                h2{
+                    margin-left: 20px;
+                }
+
+            }
+            .ligne{
+                @include flex;
+                justify-content: space-between;
+                .icone{
+                    .image{
+                        width: 240px;
+                        height: 240px;
+                        border: 5px solid white;
+                        box-shadow: 0 0 8px gray;
+                        
+                    }
+                    .num1{
+                        background-image: url(/dist/img/TEA_9665-e1571146982476.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                    }
+                    .num2{
+                        background-image: url(/dist/img/OikaMobile-e1562920657187.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+
+                    }
+                    .num3{
+                        background-image: url(/dist/img/Corner-rejoue.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center ;
+
+                    }
+                    .num4{
+                        background-image: url(/dist/img/formation.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center ;
+
+                    }
+                    h4{
+                        width: 240px;
+                        
+                    }
+                    p{
+                        width: 240px;
+                        color: gray;
+                    }
+                    a{
+                        @include gochi;
+                        color: #0eb8e9;
+                        font-size: 1.4rem
+                    }
+                }
+            }
+        }
+    }
+
+    #rs{
+        background-color: #eee;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container{
+            width: 80%;
+            margin: auto;
+            h2{
+                text-align: center;
+                border-bottom: 1px solid #000;
+                padding-bottom: 20px;
+                @include gochi;
+                font-size: 2.2rem;
+            }
+
+            .illu{
+                @include flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 20px;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+
+            .retrouvezNous{
+                @include flex;
+                align-items: center;
+                .reseaux{
+                    @include flex;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: #1877f2;
+                        
+                    }
+                }
+                i{
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    padding: 5px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 1.2rem;
+                    margin-right: 5px;
+                    &:hover{
+                        border: 2px solid #1877f2;
+                        transform: rotate(360deg);
+                        transition: transform 0.6s ease-in-out;
+                    }
+            
+                }
+                p{
+                    @include gochi;
+                    font-size: 1.5rem;
+                    margin-right: 20px;
+                }
+                
+            }
+        }
+    }
+
+    #temoin{
+        background-color: #ef8762;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        overflow: hidden;
+        width: 100%;
+        height: 350px;
+        h2{
+            text-align: center;
+            padding-bottom: 20px;
+            @include gochi;
+            font-size: 2.2rem;
+            @include ze;
+            span{
+                color: white;
+            }
+        }
+
+        .temoin{
+            width: 400vw;
+            height: 220px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            .slide{
+                width: 100vw;
+                .container{
+                    @include flex;
+                    width: 700px;
+                    margin: 0 auto;
+                    
+                }
+            }
+            .photo{
+                padding-top: 20px;
+                img{
+                    border: 4px solid white;
+                    border-radius: 50%;
+                    height: 150px;
+                    width: 150px;
+                    margin-right: 30px;
+
+                }
+            }
+            .texte{
+                h3{
+                    color: white;
+                    @include gochi;
+                    font-size: 1.8rem;
+                    @include ze;
+                    margin-top: 20px;
+                }
+                p{
+                    color: rgb(51, 51, 51);
+                }
+                a{
+                    color: white;
+                    @include gochi;
+                    font-size: 1.5rem
+                }
+            }
+            
+            
+        }
+        .switch{
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            p{
+                margin: 0 50px;
+                font-weight: bold;
+                font-size: 1.3rem;
+                color: white;
+                opacity: .8;
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+                opacity: .8;
+
+            }
+        }
+
+
+        
+    }
+
+
+
+
+}
+
+footer{
+    padding: 40px 0;
+
+    .container{
+        @include flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+
+        .logo{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 200px;
+            }
+
+            a{
+                margin-top: 10px;
+            }
+            .connexion{
+                background-image: url(/dist/img/bg-espace.png);
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.2rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 15px 21px 20px;
+                position: relative;
+                color: white;
+                text-shadow: 0 0 4px #df5917;
+                font-weight: 600;
+            }
+            .mention{
+                text-decoration: none;
+                font-weight: bold;
+                color: #000;
+                text-align: center;
+            }
+        }
+
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 5px;
+                    font-size: .8rem;
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+
+        .rs{
+            margin: auto 0;
+            h5{
+                @include gochi;
+                font-size: 1.6rem;
+                @include ze;
+                margin-bottom: 5px;
+            }
+            
+            .reseaux{
+                @include flex;
+        
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: #1877f2;
+                        
+                    }
+                }
+                i{
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    padding: 5px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-size: 1rem;
+                    margin-right: 5px;
+                    &:hover{
+                        border: 2px solid #1877f2;
+                        transform: rotate(360deg);
+                        transition: transform 0.6s ease-in-out;
+                    }
+            
+                }
+            }
+    
+            
+    
+        }
+
+        .partenaire{
+            margin: auto 0;
+            img{
+                width: 300px;
+            }
+        }
+    }
+
+}

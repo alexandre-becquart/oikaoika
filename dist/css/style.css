@@ -1,0 +1,969 @@
+html {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(/dist/img/filet-separation.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 30px;
+}
+
+header .container {
+  width: 80%;
+  margin: auto;
+}
+
+header .container .head1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+header .container .head1 .reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container .head1 div a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container .head1 div a:hover {
+  color: #1877f2;
+}
+
+header .container .head1 div i {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+header .container .head1 div i:hover {
+  border: 2px solid #1877f2;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+header .container .head1 .connexion a {
+  background-image: url(/dist/img/bg-espace.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 21px 20px;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 4px #df5917;
+  font-weight: 600;
+}
+
+header .container .head1 .connexion a:before {
+  content: url(/dist/img/oika-finger.png);
+  position: absolute;
+  top: 17px;
+  left: -30px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .container .head1 .connexion a:hover {
+  color: white;
+  text-shadow: 0 0 4px #df5917;
+}
+
+header .container .head1 .connexion a:hover:before {
+  left: -20px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .container .head2 ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .8rem;
+  margin-top: 30px;
+  margin-bottom: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 70px;
+}
+
+header .container .head2 ul li {
+  border-right: 1px solid gray;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+header .container .head2 ul li:nth-of-type(7) {
+  border-right: none;
+}
+
+main #home {
+  background-image: url(/dist/img/TEA_9666.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 600px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+main #home h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  font-size: 2.4rem;
+  width: 475px;
+  margin: auto;
+}
+
+main #home .base_line {
+  width: 325px;
+  margin: auto;
+}
+
+main #devenir {
+  background-color: #e96350;
+  height: 550px;
+}
+
+main #devenir .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main #devenir .container .image {
+  width: 45%;
+  background-image: url(/dist/img/fille-poussin.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  height: 550px;
+}
+
+main #devenir .container .text {
+  width: 55%;
+  padding-left: 20px;
+}
+
+main #devenir .container .text h2 {
+  color: white;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2.4rem;
+  margin-top: 60px;
+}
+
+main #devenir .container .text h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+main #devenir .container .text p {
+  line-height: 25px;
+}
+
+main #devenir .container .text p:nth-of-type(3) {
+  margin-bottom: 50px;
+}
+
+main #devenir .container .text a {
+  font-family: 'Gochi Hand', cursive;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 120px;
+  color: white;
+  background-image: url(/dist/img/trace.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 32%;
+  padding: 10px 50px;
+  width: 200px;
+  height: 50px;
+}
+
+main #devenir .container .text a:hover {
+  background-position: 0 68%;
+}
+
+main #accueillir {
+  background-color: #00aac5;
+  height: 400px;
+}
+
+main #accueillir .container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #accueillir .container .text {
+  width: 50%;
+}
+
+main #accueillir .container .text h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  font-size: 2.4rem;
+}
+
+main #accueillir .container .text h3 {
+  color: white;
+  font-size: 1.5rem;
+  width: 96%;
+}
+
+main #accueillir .container .text p {
+  line-height: 25px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+main #accueillir .container .text a {
+  font-family: 'Gochi Hand', cursive;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  background-image: url(/dist/img/trace.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+  padding: 15px 50px;
+  width: 200px;
+  height: 50px;
+}
+
+main #accueillir .container .text a:hover {
+  background-position: 0 66%;
+}
+
+main #accueillir .container .image {
+  width: 50%;
+  height: 400px;
+  background-image: url(/dist/img/mec-oies.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main #inscrire {
+  text-align: center;
+  background-color: #fdcc48;
+  padding-top: 50px;
+  height: 400px;
+  position: relative;
+}
+
+main #inscrire h2 {
+  font-family: 'Gochi Hand', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+main #inscrire .baseline {
+  background-image: url(/dist/img/baseline.svg);
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 50px;
+  margin: auto;
+}
+
+main #inscrire div {
+  width: 300px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #inscrire div p {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+main #inscrire .fond {
+  position: absolute;
+  top: 235px;
+  left: 480px;
+  background-image: url(/dist/img/fond-promo-bleu.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 150px;
+  width: 450px;
+  padding: 20px 0;
+  margin: auto;
+}
+
+main #inscrire .fond p {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  margin: 20px 0 5px 0;
+}
+
+main #inscrire .fond a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 25px;
+  background-image: url(/dist/img/trace.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: 10px 50px;
+  width: 220px;
+  height: 50px;
+  display: inline-block;
+  line-height: 45px;
+}
+
+main #inscrire .fond a:hover {
+  color: #00aac5;
+}
+
+main #onJoue {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #onJoue .image {
+  width: 50%;
+  background-image: url(/dist/img/fond-Gold-up-e1570008201547.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: right;
+  padding-right: 30px;
+  width: 50%;
+  position: relative;
+}
+
+main #onJoue .image img {
+  vertical-align: middle;
+  position: absolute;
+  top: 120px;
+  left: 220px;
+}
+
+main #onJoue .text {
+  width: 50%;
+  padding-left: 30px;
+}
+
+main #onJoue .text h2 {
+  font-family: 'Gochi Hand', cursive;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  font-size: 2.5rem;
+}
+
+main #onJoue .text .baseline {
+  background-image: url(/dist/img/baseline-jaune.svg);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 250px;
+}
+
+main #onJoue .text div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #onJoue .text div h3 {
+  margin: 0;
+  padding: 0;
+  color: #e95c48;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+main #onJoue .text div p {
+  margin-top: 25px;
+}
+
+main #onJoue .text p {
+  width: 400px;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+
+main #onJoue .text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gochi Hand', cursive;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+main #onJoue .text ul li {
+  border: 2px solid  #e95c48;
+  color: #e95c48;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: .6rem;
+  width: 38px;
+  height: 38px;
+}
+
+main #onJoue .text ul li p {
+  margin-left: 3px;
+  font-size: .6rem;
+  line-height: 10px;
+}
+
+main #onJoue .text ul li p span {
+  font-size: 1.3rem;
+}
+
+main #onJoue .text ul li:nth-of-type(4), main #onJoue .text ul li:nth-of-type(5), main #onJoue .text ul li:nth-of-type(6) {
+  border: none;
+}
+
+main #onJoue .text a {
+  text-decoration: none;
+  color: white;
+  background-image: url(/dist/img/trace.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 94%;
+  padding: 8px 50px;
+  margin-left: -15px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.2rem;
+}
+
+main #onJoue .text a:hover {
+  background-position: 0 34%;
+}
+
+main #quoi {
+  background-color: #0eb8e9;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+main #quoi .container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+main #quoi .container h2 {
+  font-family: 'Gochi Hand', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  color: white;
+}
+
+main #quoi .container .baseline {
+  background-image: url(/dist/img/baseline-jaune.svg);
+  background-repeat: no-repeat;
+  width: 290px;
+  height: 50px;
+  margin: auto;
+}
+
+main #quoi .container .icone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #quoi .container .icone div img {
+  height: 200px;
+}
+
+main #quoi .container .icone div h4 {
+  font-family: 'Gochi Hand', cursive;
+  color: white;
+  font-size: 1.8rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+}
+
+main #actu {
+  background-image: url(/dist/img/dot-line.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+main #actu .container {
+  width: 80%;
+  margin: auto;
+}
+
+main #actu .container .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.8rem;
+  padding-top: 40px;
+}
+
+main #actu .container .titre h2 {
+  margin-left: 20px;
+}
+
+main #actu .container .ligne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #actu .container .ligne .icone .image {
+  width: 240px;
+  height: 240px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+}
+
+main #actu .container .ligne .icone .num1 {
+  background-image: url(/dist/img/TEA_9665-e1571146982476.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main #actu .container .ligne .icone .num2 {
+  background-image: url(/dist/img/OikaMobile-e1562920657187.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+main #actu .container .ligne .icone .num3 {
+  background-image: url(/dist/img/Corner-rejoue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main #actu .container .ligne .icone .num4 {
+  background-image: url(/dist/img/formation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main #actu .container .ligne .icone h4 {
+  width: 240px;
+}
+
+main #actu .container .ligne .icone p {
+  width: 240px;
+  color: gray;
+}
+
+main #actu .container .ligne .icone a {
+  font-family: 'Gochi Hand', cursive;
+  color: #0eb8e9;
+  font-size: 1.4rem;
+}
+
+main #rs {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main #rs .container {
+  width: 80%;
+  margin: auto;
+}
+
+main #rs .container h2 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2.2rem;
+}
+
+main #rs .container .illu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+main #rs .container .illu img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+main #rs .container .retrouvezNous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #rs .container .retrouvezNous .reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #rs .container .retrouvezNous a {
+  text-decoration: none;
+  color: black;
+}
+
+main #rs .container .retrouvezNous a:hover {
+  color: #1877f2;
+}
+
+main #rs .container .retrouvezNous i {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+main #rs .container .retrouvezNous i:hover {
+  border: 2px solid #1877f2;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+main #rs .container .retrouvezNous p {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+main #temoin {
+  background-color: #ef8762;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+main #temoin h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+main #temoin h2 span {
+  color: white;
+}
+
+main #temoin .temoin {
+  width: 400vw;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #temoin .temoin .slide {
+  width: 100vw;
+}
+
+main #temoin .temoin .slide .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+}
+
+main #temoin .temoin .photo {
+  padding-top: 20px;
+}
+
+main #temoin .temoin .photo img {
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-right: 30px;
+}
+
+main #temoin .temoin .texte h3 {
+  color: white;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+main #temoin .temoin .texte p {
+  color: #333333;
+}
+
+main #temoin .temoin .texte a {
+  color: white;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.5rem;
+}
+
+main #temoin .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+main #temoin .switch p {
+  margin: 0 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  opacity: .8;
+}
+
+main #temoin .switch a {
+  text-decoration: none;
+  color: white;
+  opacity: .8;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+footer .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .logo img {
+  width: 200px;
+}
+
+footer .container .logo a {
+  margin-top: 10px;
+}
+
+footer .container .logo .connexion {
+  background-image: url(/dist/img/bg-espace.png);
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 21px 20px;
+  position: relative;
+  color: white;
+  text-shadow: 0 0 4px #df5917;
+  font-weight: 600;
+}
+
+footer .container .logo .mention {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+footer .container nav ul {
+  list-style: none;
+}
+
+footer .container nav ul li {
+  margin-bottom: 5px;
+  font-size: .8rem;
+}
+
+footer .container nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer .container .rs {
+  margin: auto 0;
+}
+
+footer .container .rs h5 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+footer .container .rs .reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container .rs .reseaux a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .container .rs .reseaux a:hover {
+  color: #1877f2;
+}
+
+footer .container .rs .reseaux i {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+footer .container .rs .reseaux i:hover {
+  border: 2px solid #1877f2;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+footer .container .partenaire {
+  margin: auto 0;
+}
+
+footer .container .partenaire img {
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */
